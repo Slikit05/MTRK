@@ -1,0 +1,206 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+		section.page-flex-container
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					section.breadcrumbs
+						.container
+							.breadcrumbs__wrapper
+								ul.breadcrumbs__list
+									li.breadcrumbs__item
+										a.breadcrumbs__link(href="#") Главная
+									li.breadcrumbs__item
+										span.breadcrumbs__link.breadcrumbs__link--active Видео
+
+					section.video-sect
+						.video-sect__up
+							.video-sect__row-air
+								.rec-cicle
+								span.video-sect__text-air Прямой эфир
+								span.video-sect__text-air Экскурсионный Краснодар 12+
+							.video-ether.video-ether--active
+								video.video-ether__video(controls="controls" poster="img/video-poster.jpg")
+									source(src="video/compose_2.mp4" type='video/mp4')
+
+						.video-sect__down
+							.video-sect__tab.video-sect__tab--active
+								.video-sect__wrap
+									img.video-sect__img(src="img/sm-img-news.jpg")
+									.video-sect__wrap-text
+										span.video-sect__time Сейчас в эфире  06:30
+										.video-sect__row
+											svg.video-sect__icon-play
+												use(xlink:href="img/sprite.svg#icon-play")
+											h4.video-sect__caption Место происшествия
+										span.video-sect__age 12+
+							.video-sect__tab
+								.video-sect__wrap
+									img.video-sect__img(src="img/sm-img-news.jpg")
+									.video-sect__wrap-text
+										span.video-sect__time Сейчас в эфире  06:30
+										.video-sect__row
+											svg.video-sect__icon-play
+												use(xlink:href="img/sprite.svg#icon-play")
+											h4.video-sect__caption Место происшествия
+										span.video-sect__age 12+
+							.video-sect__tab
+								.video-sect__wrap
+									img.video-sect__img(src="img/sm-img-news.jpg")
+									.video-sect__wrap-text
+										span.video-sect__time Сейчас в эфире  06:30
+										.video-sect__row
+											svg.video-sect__icon-play
+												use(xlink:href="img/sprite.svg#icon-play")
+											h4.video-sect__caption Место происшествия
+										span.video-sect__age 12+
+
+					section.popular-issues
+						.container
+							h2.title-page Популярные выпуски
+							.popular-issues__slider.swiper-container
+								.popular-issues__wrapper.swiper-wrapper
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+									.popular-issues__slide.swiper-slide
+										a.news-post-md(href="#")
+											.news-post-md__wrap-img
+												img.news-post-md__img(src="img/news-post-md1.jpg")
+											.news-post-md__wrap-text
+												h4.news-post-md__title Преселективная диагностика (01.11.19)
+												span.news-post-md__date Благовест
+
+						.popular-issues__arrow.popular-issues__arrow--prev
+							svg
+								use(xlink:href="img/sprite.svg#arrow")
+						.popular-issues__arrow.popular-issues__arrow--next
+							svg
+								use(xlink:href="img/sprite.svg#arrow")
+
+
+
+					section.grid-inner.grid-inner--change.projects-wrapper(style="background-color: #E7E9EC;")
+						.container
+							h2.title-page Телепроекты
+							.grid-inner__wrapper.grid-inner__wrapper--change-offset
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									//.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+									span.age 9+	
+
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									//.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+									span.age 9+	
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									//.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+									span.age 9+	
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									//.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+									span.age 9+	
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									//.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+									span.age 9+	
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									//.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+									span.age 9+	
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug	
+

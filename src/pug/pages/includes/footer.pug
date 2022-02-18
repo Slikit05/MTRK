@@ -1,0 +1,88 @@
+section.page-footer
+	.container
+		.page-footer__wrapper
+			.page-footer__left-block
+				ul.footer-list
+					li.footer-list__item
+						.rec-cicle
+						a.footer-list__link(href="#") <b>Прямой эфир</b>
+					li.footer-list__item
+						a.footer-list__link(href="#") <b>Видео</b>
+					li.footer-list__item
+						a.footer-list__link(href="#") Новости
+					li.footer-list__item
+						a.footer-list__link(href="#") Проекты
+				ul.footer-list
+					li.footer-list__item
+						a.footer-list__link(href="#") <b>Телепрограмма</b>
+					li.footer-list__item
+						a.footer-list__link(href="#") <b>Фотогалерея</b>
+					li.footer-list__item
+						a.footer-list__link(href="#") <b>О канале</b>
+				ul.footer-list
+					li.footer-list__item
+						a.footer-list__link(href="#") <b>Новости</b>
+					li.footer-list__item
+						a.footer-list__link(href="#") Все новости
+					li.footer-list__item
+						a.footer-list__link(href="#") Общество
+					li.footer-list__item
+						a.footer-list__link(href="#") Политика
+					li.footer-list__item
+						a.footer-list__link(href="#") Происшествия
+					li.footer-list__item
+						a.footer-list__link(href="#") Спорт
+					li.footer-list__item
+						a.footer-list__link(href="#") Экономика
+					li.footer-list__item
+						a.footer-list__link(href="#") Культура
+			.page-footer__right-block
+				a.page-footer__wrap.show_popup(href="#" rel="modal2")
+					.page-footer__left
+						h3.page-footer__caption Прислать материалы
+						p.page-footer__text У вас есть важная информация, которой вы готовы поделиться с редакцией? Свяжитесь с нами
+					.page-footer__right
+						//- .link-square.show_popup(href="#" rel="modal1")
+						.link-square
+							svg
+								use(xlink:href="img/sprite.svg#arrow")
+				.page-footer__block
+					.social-search
+						.social-search__wrap
+							span.social-search__number 12+
+						.social-search__wrap-text
+							span.social-search__text Ищите нас в соцсетях
+							span.social-search__caption #ВашКраснодар
+
+section.footer-down
+	.container
+		.footer-down__wrapper
+			p.footer-down__text © ООО «МТРК Краснодар». При использовании материалов сайта в интернете обязательна активная гиперссылка на tvkrasnodar.ru. Копирование текстов в неэлектронном виде возможно только с текстовой ссылкой на сайт. При использовании видеоматериалов необходимо письменное разрешение. Рекламный отдел +7 (861) 251-66-16. Приемная +7 (861) 259-20-42. Редакция +7 (861) 259-17-96 info@tvkrasnodar.ru
+			.social
+				ul.social__list
+					li.social__item
+						a.social__link(href="#")
+							svg.social__svg
+								use(xlink:href="img/sprite.svg#facebook")
+					li.social__item
+						a.social__link(href="#")
+							svg.social__svg
+								use(xlink:href="img/sprite.svg#instagram")
+					li.social__item
+						a.social__link(href="#")
+							svg.social__svg
+								use(xlink:href="img/sprite.svg#vk")
+					li.social__item
+						a.social__link(href="#")
+							svg.social__svg
+								use(xlink:href="img/sprite.svg#youtube")
+					li.social__item
+						a.social__link(href="#")
+							svg.social__svg
+								use(xlink:href="img/sprite.svg#odnoklassniki")
+					li.social__item
+						a.social__link(href="#")
+							svg.social__svg
+								use(xlink:href="img/sprite.svg#telegram")
+								
+include modal.pug

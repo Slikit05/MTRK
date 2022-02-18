@@ -1,0 +1,317 @@
+.tram-animate {
+  background-color: #E0EAF3;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 7px;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      padding: 0;
+    }
+  } 
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      stroke: #FF0000;
+      margin-left: 8px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 100%;
+
+      &:first-child {
+        order: 1;
+      }
+
+      &:last-child {
+        order: 2;
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 0 6.25%;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 0.05em;
+    @media (max-width: 575px) {
+      font-size: 12px;
+    }
+  }
+
+  &__row {
+    flex-grow: 1;
+    position: relative;
+    max-width: 50%;
+    min-height: 40px;
+
+    @media (max-width: 1200px) {
+      order: 3;
+      width: 100%;
+      max-width: inherit;
+      margin: 0 12.50% 0 6.25%;
+    }
+  }
+
+  &__tram {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation-delay: 0.5s;
+    animation: 3s tram-go forwards;
+    @media (max-width: 1200px) {
+      left: 32px;
+    }
+
+    &--two {
+      animation: 3s tram-go2 forwards;
+    }
+  }
+
+  &__hide-row {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 0 1px;
+  }
+
+  &__hide-cell {
+    flex-grow: 1;
+    position: relative;
+
+    &:nth-child(5) {
+      &::before {
+        content: "";
+        position: absolute;
+        left: -2.5px;
+        bottom: 0;
+        width: 22px;
+        height: 33px;
+        background-image: url(../img/flag.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(14) {
+      &::before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        bottom: 0;
+        width: 22px;
+        height: 33px;
+        background-image: url(../img/flag.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @media (max-width: 1200px) {
+
+      &:nth-child(5),
+      &:nth-child(14) {
+        &::before {
+          display: none;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(15) {
+        &::before {
+          content: "";
+          position: absolute;
+          left: -2.5px;
+          bottom: 0;
+          width: 22px;
+          height: 33px;
+          background-image: url(../img/flag.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  &__down {
+    display: flex;
+    border-top: 2px solid #1C2F4A;
+    padding: 0 1px;
+  }
+
+  &__cell {
+    flex-grow: 1;
+    min-height: 7px;
+    border-left: 1px solid rgba($color: #1C2F4A, $alpha: 0.15);
+    border-right: 1px solid rgba($color: #1C2F4A, $alpha: 0.15);
+    margin: 0 -1px;
+
+    @media (min-width: 1200px) {
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(15),
+      &:nth-child(16) {
+        animation: none;
+      }
+
+      &:nth-child(4) {
+        animation: 3s hide-opacity;
+        animation-delay: 0s;
+      }
+
+      &:nth-child(5) {
+        animation: 3s hide;
+        animation-delay: 0.2s;
+      }
+
+      &:nth-child(6) {
+        animation: 3s hide;
+        animation-delay: 0.4s;
+      }
+
+      &:nth-child(7) {
+        animation: 3s hide-opacity-end forwards;
+        animation-delay: 0.6s;
+      }
+
+      &:nth-child(8) {
+        animation: 3s hide-end forwards;
+        animation-delay: 0.8s;
+      }
+
+      &:nth-child(9) {
+        animation: 3s hide-end forwards;
+        animation-delay: 1s;
+      }
+
+      &:nth-child(10) {
+        animation: 3s hide-opacity-end2 forwards;
+        animation-delay: 1.2s;
+      }
+
+      &:nth-child(11) {
+        animation-delay: 1.4s;
+      }
+
+      &:nth-child(12) {
+        animation-delay: 1.6s;
+      }
+
+      &:nth-child(13) {
+        animation-delay: 1.8s;
+      }
+
+      &:nth-child(14) {
+        animation-delay: 2s;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  @keyframes hide-opacity {
+    from {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+
+    50% {
+      background-color: rgba($color: #fff, $alpha: 0.5);
+    }
+
+    to {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+  }
+
+  @keyframes hide-opacity-end2 {
+    from {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+
+    to {
+      background-color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+
+  @keyframes hide {
+    from {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+
+    50% {
+      background-color: rgba($color: #fff, $alpha: 1.0);
+    }
+
+    to {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+  }
+
+  @keyframes hide-opacity-end {
+    from {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+
+    50% {
+      background-color: rgba($color: #fff, $alpha: 1.0);
+    }
+
+    to {
+      background-color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+
+  @keyframes hide-end {
+    from {
+      background-color: rgba($color: #fff, $alpha: 0);
+    }
+
+    to {
+      background-color: rgba($color: #fff, $alpha: 1.0);
+    }
+  }
+
+  @keyframes tram-go {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: calc(43% - 40px);
+    }
+  }
+
+  @keyframes tram-go2 {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: calc(43% - 80px);
+    }
+  }
+}

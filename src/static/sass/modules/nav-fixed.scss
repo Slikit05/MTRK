@@ -1,0 +1,62 @@
+.nav-fixed {
+	display: none;
+	position: fixed;
+	background-color: #F3F3F4;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 18;
+
+	&__wrap {
+		flex-basis: 25%;
+		min-height: 60px;
+		border-right: 1px solid #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 5px;
+		padding-top: 5px;
+
+		&:active {
+			background-color: #fff;
+
+			svg {
+				fill: #FDCD08;
+				stroke: #FDCD08;
+			}
+		}
+
+		&:last-child {
+			border: none;
+		}
+
+		.burger {
+			display: flex;
+			padding: 5px 0;
+			height: 25px;
+			margin: 0;
+			width: 25px;
+
+			&__line {
+				background-color: #282E33;
+			}
+		}
+	}
+
+	&__svg {
+		max-width: 25px;
+		max-height: 25px;
+		fill: #282E33;
+		stroke: #282E33;
+	}
+
+	&__caption {
+		font-size: 10px;
+		line-height: 10px;
+		font-weight: 700;
+		letter-spacing: 0.4px;
+		color: #414548;
+		margin-top: 6px;
+	}
+}

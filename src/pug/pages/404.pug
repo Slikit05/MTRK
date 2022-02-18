@@ -1,0 +1,46 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+		section.page-flex-container
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					section.not-found-page
+						section.center-wrap
+							section.row-title-inner
+								.container
+									h2.title-inner Ошибка 404
+									p.not-found-page__text Такой страницы не существует. Если вы уверены, что все сделали правильно, <a href="#">расскажите нам,</a> откуда вы сюда попали
+									a.link-row-all(href="#")
+										.link-row-all__wrapper
+											span.link-row-all__text На главную
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+						img.not-found-page__img(src="img/404-img.jpg")
+
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug
+		script(src="js/infinite-scroll.pkgd.js")
+		script(src="js/infinit-script.js")
+

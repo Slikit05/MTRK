@@ -1,0 +1,29 @@
+@import "src/static/sass/utils/mixins.scss";
+@import "src/static/sass/utils/vars.scss";
+
+//seting
+@import "src/static/sass/seting/generic.scss";
+@import "src/static/sass/seting/grid.scss";
+@import "src/static/sass/seting/font.scss";
+@import "src/static/sass/seting/over.scss";
+
+//index
+@import "src/static/sass/main.scss";
+
+
+//inner
+@import "src/static/sass/inner.scss";
+
+//module
+@import "src/static/sass/modules/header.scss";
+@import "src/static/sass/modules/footer.scss";
+@import "src/static/sass/modules/modal.scss";
+@import "src/static/sass/modules/first-screen.scss";
+@import "src/static/sass/modules/mob-menu.scss";
+@import "src/static/sass/modules/nav-fixed.scss";
+@import "src/static/sass/modules/tram.scss";
+
+
+//media
+@import "src/static/sass/media/tablet.scss";
+@import "src/static/sass/media/mobile.scss";

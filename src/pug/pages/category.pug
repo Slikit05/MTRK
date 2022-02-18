@@ -1,0 +1,230 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+		section.page-flex-container
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					section.breadcrumbs.breadcrumbs--change
+						.container
+							.breadcrumbs__wrapper
+								ul.breadcrumbs__list
+									li.breadcrumbs__item
+										a.breadcrumbs__link(href="#") Главная
+									li.breadcrumbs__item
+										.breadcrumbs__wrap-img.breadcrumbs__wrap-img--violet
+											img.breadcrumbs__icon(src="img/team.svg")
+										span.breadcrumbs__link.breadcrumbs__link--active Видео
+
+					section.hash-slider.hash-slider--change
+						.container
+							.hash-slider__container.swiper-container
+								.hash-slider__wrapper.swiper-wrapper
+									.hash-slider__slide.swiper-slide
+										.hash-slider__wrapper
+											a.hash-slider__link.hash-slider__link--active(href="#") #Все
+									.hash-slider__slide.swiper-slide
+										.hash-slider__wrapper
+											a.hash-slider__link(href="#") #Краснодар столица юга
+									.hash-slider__slide.swiper-slide
+										.hash-slider__wrapper
+											a.hash-slider__link(href="#") #Краснодар столица юга
+									.hash-slider__slide.swiper-slide
+										.hash-slider__wrapper
+											a.hash-slider__link(href="#") #Краснодар столица юга
+
+					section.row-title-inner
+						.container
+							.row-title-inner__wrapper
+								h2.title-inner Общество
+								.date-field
+									.date-field__wrap
+										input.date-field__field#dateSelect(placeholder="Видео за период")
+										.date-field__wrap-arrow
+											img.date-field__arrow(src="img/arrow-down.svg")
+									.date-field__drop-down
+										.date-field__calendar(id="datepicker2")
+
+					section.first-screen.first-screen--change
+						.container
+							.first-screen__wrapper
+								.first-screen__left-block
+									.first-screen-slider__block.first-screen-slider__block--change(style="background-image: url(img/first-screen-slider2.jpg)")
+										.first-screen-slider__wrap-text
+											.first-screen-slider__wrap
+												h2.first-screen-slider__caption Кубанцы положительно оценивают деятельность Владимира Путина и Вениамина Кондратьева
+												span.date Сегодня 09:43
+
+
+								.first-screen__right-block.first-screen__right-block--change
+									.first-screen-news.first-screen-news--change
+										.first-screen-news__block-posts
+											a.first-screen-news__row(href="#")
+												.first-screen-news__wrapper
+													.first-screen-news__wrap-img
+														img.first-screen-news__img(src="img/first-screen-news1.jpg")
+													.first-screen-news__wrap-text
+														h4.first-screen-news__caption Ко Дню города в Краснодаре проведут масштабный субботник
+														.first-screen-news__wrap
+															span.first-screen-news__date Сегодня 09:43
+															span.first-screen-news__category.first-screen-news__category--violet Общество
+											a.first-screen-news__row(href="#")
+												.first-screen-news__wrapper
+													.first-screen-news__wrap-img
+														img.first-screen-news__img(src="img/first-screen-news1.jpg")
+													.first-screen-news__wrap-text
+														h4.first-screen-news__caption В Краснодарском фитнес-центре медработник спас мужчину после остановки сердца
+														.first-screen-news__wrap
+															span.first-screen-news__date Сегодня 09:43
+															span.first-screen-news__category.first-screen-news__category--red Происшествия
+											a.first-screen-news__row(href="#")
+												.first-screen-news__wrapper
+													.first-screen-news__wrap-img
+														img.first-screen-news__img(src="img/first-screen-news1.jpg")
+													.first-screen-news__wrap-text
+														h4.first-screen-news__caption Ко Дню города в Краснодаре проведут масштабный субботник
+														.first-screen-news__wrap
+															span.first-screen-news__date Сегодня 09:43
+															span.first-screen-news__category.first-screen-news__category--violet Общество
+											a.first-screen-news__row(href="#")
+												.first-screen-news__wrapper
+													.first-screen-news__wrap-img
+														img.first-screen-news__img(src="img/first-screen-news1.jpg")
+													.first-screen-news__wrap-text
+														h4.first-screen-news__caption Ко Дню города в Краснодаре проведут масштабный субботник
+														.first-screen-news__wrap
+															span.first-screen-news__date Сегодня 09:43
+															span.first-screen-news__category.first-screen-news__category--violet Общество
+											a.first-screen-news__row(href="#")
+												.first-screen-news__wrapper
+													.first-screen-news__wrap-img
+														img.first-screen-news__img(src="img/first-screen-news1.jpg")
+													.first-screen-news__wrap-text
+														h4.first-screen-news__caption В Краснодарском фитнес-центре медработник спас мужчину после остановки сердца
+														.first-screen-news__wrap
+															span.first-screen-news__date Сегодня 09:43
+															span.first-screen-news__category.first-screen-news__category--red Происшествия
+											
+
+					section.show-ba-sect
+						picture
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 991px)")
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 575px)")
+							img(src="img/img-ba1.jpg")
+
+					section.six-columns
+						.container
+							.six-columns__wrapper
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md3-big.jpg")
+
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md3-big.jpg")
+
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md3-big.jpg")
+
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-big.news-post-big--change(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										span.news-post-big__date Сегодня 05:42
+
+								a.news-post-big.news-post-big--change(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										span.news-post-big__date Сегодня 05:42
+
+					section.show-ba-sect
+						picture
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 991px)")
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 575px)")
+							img(src="img/img-ba1.jpg")
+
+					section.six-columns
+						.container
+							.six-columns__wrapper
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md3-big.jpg")
+
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md3-big.jpg")
+
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md3-big.jpg")
+
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+								a.news-post-big.news-post-big--change(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										span.news-post-big__date Сегодня 05:42
+
+								a.news-post-big.news-post-big--change(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										span.news-post-big__date Сегодня 05:42
+
+								a.link-row-all(href="#")
+									.link-row-all__wrapper
+										span.link-row-all__text Все новости раздела
+										svg.link-row-all__arrow
+											use(xlink:href="img/sprite.svg#arrow-long")
+
+					section.show-ba-sect.show-ba-sect--no-offset
+						picture
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 991px)")
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 575px)")
+							img(src="img/img-ba1.jpg")
+
+
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug	
+

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>МТРК</title>
+    <link rel="stylesheet" type="text/css" href="css/normalise.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <section class="page-flex-container">
+      <div class="sidebar-page sidebar-page--inner" style="background-image: url(img/sider-bar.jpg)"></div>
+      <div class="content-page">
+        <section class="mob-menu">
+          <div class="close-menu"></div>
+          <div class="mob-menu__up">
+            <div class="menu-video"><img src="img/video-img.jpg"></div>
+            <div class="menu-ether progress-bar">
+              <div class="time-bar"></div><span class="menu-ether__caption"><span class="rec-cicle"></span> Прямой эфир</span>
+              <div class="menu-ether__wrap-text"><span class="menu-ether__text">Экскурсионный Краснодар</span><span class="menu-ether__old">12+</span></div>
+            </div>
+          </div>
+          <div class="mob-menu__middle">
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-nav__list">
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__caption" href="#">Видео</a>
+                  <ul class="mob-menu-nav__sub-list">
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Новости</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Проекты</a></li>
+                  </ul>
+                </li>
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__caption" href="#">Телепрограмма</a></li>
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__caption" href="#">Фотогалерея</a></li>
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__caption" href="#">О канале</a></li>
+                <li class="mob-menu-nav__item"><a class="mob-menu-nav__caption" href="#">Новости</a>
+                  <ul class="mob-menu-nav__sub-list">
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Все Новости</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Общество</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Политика</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Происшествия</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Спорт</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Экономика</a></li>
+                    <li class="mob-menu-nav__sub-item"><a class="mob-menu-nav__link" href="#">Культура</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu__down">
+            <div class="menu-soc-row">
+              <div class="menu-soc-row__wrap"><span class="menu-soc-row__text">Ищите нас в соцсетях</span><span class="menu-soc-row__hash">#ВашКраснодар</span></div><a class="logo" href="#">
+                <div class="logo__wrap"><img class="logo__img" src="img/logo.png"></div></a>
+            </div>
+            <div class="mob-menu__down-row"><span class="mob-menu__text">Подпишись, и будь в эпицентре жизни Краснодара</span>
+              <div class="mob-menu__wrap-arrow"><a class="link-square" href="#"> 
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </section>
+        <header>
+          <section class="gray-bg-page"></section>
+          <section class="search-drop">
+            <div class="container">
+              <div class="search-drop__wrapper">
+                <div class="search-drop__left">
+                  <input class="search-drop__field" type="text" placeholder="Поиск по сайту">
+                  <div class="search-drop__row"><span class="search-drop__text">Например,</span><a class="search-drop__link-text" href="#">Детские сады в Краснодаре</a></div>
+                </div>
+                <div class="search-drop__right"><a class="link-row-all" href="#">
+                    <div class="link-row-all__wrapper"><span class="link-row-all__text">Найти</span></div></a>
+                  <div class="search-drop__close"></div>
+                </div>
+              </div>
+              <div class="search-drop__down"><a class="search-drop__link" href="#">Врач скорой помощь спас мужчину в фитнес-клубе после остановки сердца</a><a class="search-drop__link" href="#">Врач скорой помощи рассказал о правильном застолье</a><a class="search-drop__link" href="#">Краснодарские реформы не минут</a><a class="search-drop__link" href="#">Врач скорой помощь спас мужчину в фитнес-клубе после остановки сердца</a></div>
+              <div class="search-drop__wrap"><a class="search-drop__over-row" href="#"><span class="search-drop__text">Все результаты</span><span class="search-drop__value">128</span>
+                  <svg class="search-drop__arrow">
+                    <use xlink:href="img/sprite.svg#arrow-long"></use>
+                  </svg></a></div>
+            </div>
+          </section>
+          <section class="page-header">
+            <div class="page-header__wrapper"><a class="logo" href="#">
+                <div class="logo__wrap"><img class="logo__img" src="img/logo.png"></div></a>
+              <div class="video-block">
+                <div class="video-block__wrapper">
+                  <div class="video-block__block">
+                    <div class="video-block__close"></div>
+                    <div class="video-block__wrap-play">
+                      <svg class="video-block__play">
+                        <use xlink:href="img/sprite.svg#play-two"></use>
+                      </svg>
+                    </div>
+                    <div class="video-block__wrap">
+                      <video class="video-block__video" poster="img/video-poster.jpg">
+                        <source src="video/compose_2.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-header__up">
+                <div class="program-guide swiper-container">
+                  <div class="program-guide__wrapper swiper-wrapper">
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#">
+                        <div class="rec-cicle"></div><span>Прямой эфир</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link progress-bar" href="#">
+                        <div class="time-bar"></div><span>Экскурсионный Краснодар 12+</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Прямой эфир</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Экскурсионный Краснодар 12+</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Прямой эфир</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Экскурсионный Краснодар 12+</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Прямой эфир</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Экскурсионный Краснодар 12+</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Прямой эфир</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Экскурсионный Краснодар 12+</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Прямой эфир</span></a></div>
+                    <div class="program-guide__item swiper-slide"><a class="program-guide__link" href="#"><span>Экскурсионный Краснодар 12+</span></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-header__down">
+                <div class="burger">
+                  <div class="burger__line"></div>
+                  <div class="burger__line"></div>
+                  <div class="burger__line"></div>
+                </div>
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#">Главное</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Видео</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Интересное</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Новости</a></li>
+                  </ul>
+                </nav>
+                <div class="search-icon">
+                  <svg class="search-icon__svg">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <main>
+          <section class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__wrapper">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                  <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link--active">Видео</span></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="row-title-inner">
+            <div class="container">
+              <div class="row-title-inner__wrapper">
+                <h2 class="title-inner">Видеорепортажи</h2>
+              </div>
+            </div>
+          </section>
+          <section class="grid-inner">
+            <div class="container">
+              <div class="grid-inner__wrapper"><a class="news-post-big news-post-big--change" href="#"><img class="news-post-big__img" src="img/news-post-big1.jpg">
+                  <div class="news-post-big__wrap-text"><span class="news-post-big__date">Сегодня 05:42</span>
+                    <h3 class="news-post-big__title">План выполнен: в Краснодаре обновили около<br> 65 км дорог</h3>
+                    <div class="news-post-big__row">                     
+                      <div class="play-block"><span class="play-block__time">05:54</span>
+                        <div class="play-block__play">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#play"></use>
+                          </svg>
+                        </div><span class="play-block__text">Краснодар сегодня</span>
+                      </div>
+                    </div>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-big news-post-big--change" href="#"><img class="news-post-big__img" src="img/news-post-big1.jpg">
+                  <div class="news-post-big__wrap-text"><span class="news-post-big__date">Сегодня 05:42</span>
+                    <h3 class="news-post-big__title">План выполнен: в Краснодаре обновили около<br> 65 км дорог</h3>
+                    <div class="news-post-big__row">                     
+                      <div class="play-block"><span class="play-block__time">05:54</span>
+                        <div class="play-block__play">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#play"></use>
+                          </svg>
+                        </div><span class="play-block__text">Краснодар сегодня</span>
+                      </div>
+                    </div>
+                  </div></a><a class="news-post-big news-post-big--change" href="#"><img class="news-post-big__img" src="img/news-post-big1.jpg">
+                  <div class="news-post-big__wrap-text"><span class="news-post-big__date">Сегодня 05:42</span>
+                    <h3 class="news-post-big__title">План выполнен: в Краснодаре обновили около<br> 65 км дорог</h3>
+                    <div class="news-post-big__row">                     
+                      <div class="play-block"><span class="play-block__time">05:54</span>
+                        <div class="play-block__play">
+                          <svg>
+                            <use xlink:href="img/sprite.svg#play"></use>
+                          </svg>
+                        </div><span class="play-block__text">Краснодар сегодня</span>
+                      </div>
+                    </div>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="news-post-md" href="#">
+                  <div class="news-post-md__wrap-img"><img class="news-post-md__img" src="img/news-post-md1.jpg">
+                    <div class="play-block"><span class="play-block__time">05:54</span>
+                      <div class="play-block__play">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#play"></use>
+                        </svg>
+                      </div><span class="play-block__text">Краснодар сегодня</span>
+                    </div>
+                  </div>
+                  <div class="news-post-md__wrap-text">
+                    <h4 class="news-post-md__title">Ко Дню города в Краснодаре проведут масштабный субботник</h4><span class="news-post-md__date">Сегодня 09:43</span>
+                  </div></a><a class="link-row-all" href="#">
+                  <div class="container">
+                    <div class="link-row-all__wrapper"><span class="link-row-all__text">Смотреть все новости</span>
+                      <svg class="link-row-all__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-long"></use>
+                      </svg>
+                    </div>
+                  </div></a></div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <section class="page-footer">
+            <div class="container">
+              <div class="page-footer__wrapper">
+                <div class="page-footer__left-block">
+                  <ul class="footer-list">
+                    <li class="footer-list__item">
+                      <div class="rec-cicle"></div><a class="footer-list__link" href="#"><b>Прямой эфир</b></a>
+                    </li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#"><b>Видео</b></a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Новости</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Проекты</a></li>
+                  </ul>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#"><b>Телепрограмма</b></a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#"><b>Фотогалерея</b></a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#"><b>О канале</b></a></li>
+                  </ul>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a class="footer-list__link" href="#"><b>Новости</b></a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Все новости</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Общество</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Политика</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Происшествия</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Спорт</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Экономика</a></li>
+                    <li class="footer-list__item"><a class="footer-list__link" href="#">Культура</a></li>
+                  </ul>
+                </div>
+                <div class="page-footer__right-block"><a class="page-footer__wrap show_popup" href="#" rel="modal2">
+                    <div class="page-footer__left">
+                      <h3 class="page-footer__caption">Прислать материалы</h3>
+                      <p class="page-footer__text">У вас есть важная информация, которой вы готовы поделиться с редакцией? Свяжитесь с нами</p>
+                    </div>
+                    <div class="page-footer__right">
+                      <div class="link-square">
+                        <svg>
+                          <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
+                      </div>
+                    </div></a>
+                  <div class="page-footer__block">
+                    <div class="social-search">
+                      <div class="social-search__wrap"><span class="social-search__number">12+</span></div>
+                      <div class="social-search__wrap-text"><span class="social-search__text">Ищите нас в соцсетях</span><span class="social-search__caption">#ВашКраснодар</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="footer-down">
+            <div class="container">
+              <div class="footer-down__wrapper">
+                <p class="footer-down__text">© ООО «МТРК Краснодар». При использовании материалов сайта в интернете обязательна активная гиперссылка на tvkrasnodar.ru. Копирование текстов в неэлектронном виде возможно только с текстовой ссылкой на сайт. При использовании видеоматериалов необходимо письменное разрешение. Рекламный отдел +7 (861) 251-66-16. Приемная +7 (861) 259-20-42. Редакция +7 (861) 259-17-96 info@tvkrasnodar.ru</p>
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#youtube"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#odnoklassniki"></use>
+                        </svg></a></li>
+                    <li class="social__item"><a class="social__link" href="#">
+                        <svg class="social__svg">
+                          <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="modal-container overlay_popup" id="modal1">
+            <div class="modal-container__container">
+              <div class="modal-container__wrapper">
+                <div class="my-modal">
+                  <div class="my-modal__close close-popup"></div>
+                  <div class="my-modal__block">
+                    <h3 class="my-modal__title">Заголовок окна</h3>
+                    <p class="my-modal__text">Неоднородность отклоняет межядерный газ. Кристаллическая решетка синхронизует</p>
+                    <input class="my-modal__field" type="email" placeholder="Ваш email">
+                    <div class="check-wrapper">
+                      <label class="check-wrapper__wrap">
+                        <input class="check-wrapper__check" type="checkbox"><span class="check-wrapper__square"></span>
+                      </label><span class="check-wrapper__text">Я выражаю своё согласие с <a href="#">Политикой<br> конфиденциальности этого сайта</a></span>
+                    </div>
+                  </div><a class="link-row-all" href="#">
+                    <div class="link-row-all__wrapper"><span class="link-row-all__text">Отправить</span>
+                      <svg class="link-row-all__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-long"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-container overlay_popup" id="modal2">
+            <div class="modal-container__container">
+              <div class="modal-container__wrapper">
+                <div class="my-modal">
+                  <div class="my-modal__close close-popup"></div>
+                  <div class="my-modal__block">
+                    <h3 class="my-modal__title">Заголовок окна</h3>
+                    <p class="my-modal__text">Неоднородность отклоняет межядерный газ. Кристаллическая решетка синхронизует</p>
+                    <input class="my-modal__field" type="tel" placeholder="Ваш email">
+                    <div class="input-file">
+                      <label class="mb-1">
+                        <button class="input-file__btn" type="button" id="buttonFile">Приложить файл</button>
+                        <input type="file" id="loader" multiple>
+                      </label>
+                      <div class="input-file__wrap">
+                        <div class="input-file__list" id="listFile"></div>
+                      </div>
+                    </div>
+                    <div class="check-wrapper">
+                      <label class="check-wrapper__wrap">
+                        <input class="check-wrapper__check" type="checkbox"><span class="check-wrapper__square"></span>
+                      </label><span class="check-wrapper__text">Я выражаю своё согласие с <a href="#">Политикой<br> конфиденциальности этого сайта</a></span>
+                    </div>
+                  </div><a class="link-row-all" href="#">
+                    <div class="link-row-all__wrapper"><span class="link-row-all__text">Отправить</span>
+                      <svg class="link-row-all__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-long"></use>
+                      </svg>
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-container overlay_popup" id="modal3">
+            <div class="modal-container__container">
+              <div class="modal-container__wrapper">
+                <div class="my-modal modal-video">
+                  <div class="my-modal__close close-popup"></div>
+                  <div class="my-modal__wrap-video">
+                    <iframe src="https://www.youtube.com/embed/m0OptnFGjM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="my-modal__block">
+                    <div class="my-modal__scroll">
+                      <div class="my-modal__wrap-text">
+                        <h4>#КРАСНОДАРСЕГОДНЯ <span>12</span></h4>
+                        <p>Россиян ждет короткая рабочая неделя </p>
+                        <p>Почти 500 человек планируют переселить из аварийного жилья в Краснодарском крае в текущем году</p>
+                        <p>Россиян ждет короткая рабочая неделя </p>
+                        <p>Почти 500 человек планируют переселить из аварийного жилья в Краснодарском крае в текущем году</p>
+                        <p>Россиян ждет короткая рабочая неделя </p>
+                        <p>Почти 500 человек планируют переселить из аварийного жилья в Краснодарском крае в текущем году </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <section class="nav-fixed"><a class="nav-fixed__wrap" href="#">
+            <svg class="nav-fixed__svg">
+              <use xlink:href="img/sprite.svg#tv-icon"></use>
+            </svg><span class="nav-fixed__caption">Главное</span></a><a class="nav-fixed__wrap" href="#">
+            <svg class="nav-fixed__svg">
+              <use xlink:href="img/sprite.svg#play-two"></use>
+            </svg><span class="nav-fixed__caption">Видео</span></a><a class="nav-fixed__wrap" href="#">
+            <svg class="nav-fixed__svg">
+              <use xlink:href="img/sprite.svg#eye"></use>
+            </svg><span class="nav-fixed__caption">Интересное</span></a>
+          <div class="nav-fixed__wrap">
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div><span class="nav-fixed__caption">Меню</span>
+          </div>
+        </section>
+      </div>
+      <div class="sidebar-page sidebar-page--inner" style="background-image: url(img/sider-bar.jpg)"></div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.datepicker.extension.range.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <!--script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")-->
+    <script src="js/smooth-scrollbar.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

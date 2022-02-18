@@ -1,0 +1,479 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+
+		//- section.show-flack
+			.show-flack__close
+			img(src="img/img-ban.jpg")
+		section.page-flex-container
+			//- .sidebar-page(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				//- section.tram-animate
+					.container
+						.tram-animate__wrapper
+							.tram-animate__wrap
+								span.tram-animate__text Строительство трамвайной ветки
+
+							.tram-animate__row
+								//- img.tram-animate__tram(src="img/tram-1.svg", alt="")
+								img.tram-animate__tram.tram-animate__tram--two(src="img/tram-2.svg", alt="")
+							.tram-animate__hide-row
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+								.tram-animate__hide-cell
+							.tram-animate__wrap
+								span.tram-animate__text на ул. Московской
+								svg(viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M1 1L6 6L1 11" stroke="#FF0000" stroke-width="2")
+
+
+						.tram-animate__down
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+							.tram-animate__cell
+				section.row-show
+					img.row-show__bg(src="img/row-show-bg.jpg")
+					.container
+						.row-show__wrapper
+							.row-show__wrap
+								.row-show__circle
+								span ВАКЦИНИРУЙСЯ
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					include includes/first-screen.pug
+
+					section.sect-padding.gray-bg
+
+						section.news-sect
+							.container
+								h2.title-page Новости
+								.grid-post-uncollapse
+									a.news-post-big.show_popup(href="#" rel="modal3")
+										img.news-post-big__img(src="img/news-post-big1.jpg")
+										.news-post-big__wrap-text
+											span.news-post-big__date Сегодня 05:42
+											h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+											.news-post-big__row                      
+												.play-block
+													span.play-block__time 05:54
+													.play-block__play
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.play-block__text Краснодар сегодня
+
+									a.news-post-md.show_popup(href="#" rel="modal3")
+										.news-post-md__wrap-img
+											img.news-post-md__img(src="img/news-post-md1.jpg")
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.play-block__text Краснодар сегодня
+										.news-post-md__wrap-text
+											h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+											span.news-post-md__date Сегодня 09:43
+
+									.post-sm-wrap
+										a.news-post-sm.show_popup(href="#" rel="modal3")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm1.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Краснодар сегодня
+
+										a.news-post-sm.show_popup(href="#" rel="modal3")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Краснодар сегодня
+
+								a.link-row-all(href="#")
+									.container
+										.link-row-all__wrapper
+											span.link-row-all__text Смотреть все новости
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+
+						section.news-sect
+							.container
+								h2.title-page Все проекты
+								.grid-post-uncollapse
+									a.news-post-md(href="#")
+										.news-post-md__wrap-img
+											img.news-post-md__img(src="img/news-post-md1.jpg")
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.play-block__text(style="background: linear-gradient(180deg, #88C428 0%, #4E801C 100%);") Планета Агро
+										.news-post-md__wrap-text
+											h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+											span.news-post-md__date Сегодня 09:43
+
+									.post-sm-wrap
+										a.news-post-sm(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Краснодар сегодня
+
+										a.news-post-sm(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Действующие лица		
+
+									a.news-post-big(href="#")
+										img.news-post-big__img(src="img/news-post-big1.jpg")
+										.news-post-big__wrap-text
+											span.news-post-big__date Сегодня 05:42
+											h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+											.news-post-big__row                      
+												.play-block
+													span.play-block__time 05:54
+													.play-block__play
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.play-block__text(style="background: linear-gradient(180deg, #FFFFFF 0%, #CFCFCF 100%);color:#282E33;") Действующие лица	
+
+								a.link-row-all(href="#")
+									.container
+										.link-row-all__wrapper
+											span.link-row-all__text Смотреть все новости
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+
+					section.show-ba-sect
+						picture
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 991px)")
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 575px)")
+							img(src="img/img-ba1.jpg")
+
+					section.sect-category
+						.container
+
+							.title-row.title-row--violet
+								.title-row__wrap-img
+									img.title-row__img(src="img/team.svg")
+								h2.title-page Общество
+
+							.grid-post-collapse
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										.news-post-big__row                      
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+
+									.post-sm-wrap
+										a.news-post-sm(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Действующие лица
+
+										a.news-post-sm(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Действующие лица
+
+									a.news-post-md(href="#")
+										.news-post-md__wrap-img
+											img.news-post-md__img(src="img/news-post-md2.jpg")
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+										.news-post-md__wrap-text
+											h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+											span.news-post-md__date Сегодня 09:43
+
+									a.link-row-all(href="#")
+										.link-row-all__wrapper
+											span.link-row-all__text Все новости раздела
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+
+					section.sect-category
+						.container
+
+							.title-row.title-row--blue
+								.title-row__wrap-img
+									img.title-row__img(src="img/politics.svg")
+								h2.title-page Политика
+
+							.grid-post-collapse
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md2.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								.post-sm-wrap
+									a.news-post-sm(href="#")
+										.news-post-sm__up
+											img.news-post-sm__img(src="img/news-post-sm2.jpg")
+											h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+										.news-post-sm__down
+											.news-post-sm__play-wrap
+												.news-post-sm__wrap-svg
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.news-post-sm__date Сегодня 09:43
+											span.news-post-sm__text Действующие лица
+
+									a.news-post-sm(href="#")
+										.news-post-sm__up
+											img.news-post-sm__img(src="img/news-post-sm2.jpg")
+											h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+										.news-post-sm__down
+											.news-post-sm__play-wrap
+												.news-post-sm__wrap-svg
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.news-post-sm__date Сегодня 09:43
+											span.news-post-sm__text Действующие лица		
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										.news-post-big__row                      
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+
+									a.link-row-all(href="#")
+										.link-row-all__wrapper
+											span.link-row-all__text Все новости раздела
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+
+					section.sect-category
+						.container
+
+							.title-row.title-row--red
+								.title-row__wrap-img
+									img.title-row__img(src="img/event.svg")
+								h2.title-page Происшествия
+
+							.grid-post-collapse
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big2.jpg")
+									.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										.news-post-big__row                      
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+
+									.post-sm-wrap
+										a.news-post-sm(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Действующие лица
+
+										a.news-post-sm(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/news-post-sm2.jpg")
+												h5.news-post-sm__title Синоптики рассказали, какая погода будет в Краснодаре на Новый год
+											.news-post-sm__down
+												.news-post-sm__play-wrap
+													.news-post-sm__wrap-svg
+														svg
+															use(xlink:href="img/sprite.svg#play")
+													span.news-post-sm__date Сегодня 09:43
+												span.news-post-sm__text Действующие лица
+
+									a.news-post-md(href="#")
+										.news-post-md__wrap-img
+											img.news-post-md__img(src="img/news-post-md2.jpg")
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+										.news-post-md__wrap-text
+											h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+											span.news-post-md__date Сегодня 09:43
+
+									a.link-row-all(href="#")
+										.link-row-all__wrapper
+											span.link-row-all__text Все новости раздела
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+
+					section.show-ba-sect.show-ba-sect--change
+						picture
+							source(srcset="img/img-ba2-tab.jpg" media="(max-width: 991px)")
+							source(srcset="img/img-ba2-tab.jpg" media="(max-width: 575px)")
+							img(src="img/img-ba2.jpg")
+
+					section.interesting
+						.container
+							h2.title-page Интересное
+							.interesting__wrapper
+								.interesting-slider.swiper-container
+									.interesting-slider__wrapper.swiper-wrapper
+										.interesting-slider__slide.swiper-slide
+											a.interesting-slider__block(href="#" style="background-image: url(img/interesting-slide1.jpg);")
+												.interesting-slider__wrap-text
+													h3.interesting-slider__title В краснодарском фитнес-центре врач спас мужчину после остановки сердца
+													span.interesting-slider__date Сегодня 09:43
+										.interesting-slider__slide.swiper-slide
+											a.interesting-slider__block(href="#" style="background-image: url(img/interesting-slide1.jpg);")
+												.interesting-slider__wrap-text
+													h3.interesting-slider__title В краснодарском фитнес-центре врач спас мужчину после остановки сердца
+													span.interesting-slider__date Сегодня 09:43
+										.interesting-slider__slide.swiper-slide
+											a.interesting-slider__block(href="#" style="background-image: url(img/interesting-slide1.jpg);")
+												.interesting-slider__wrap-text
+													h3.interesting-slider__title В краснодарском фитнес-центре врач спас мужчину после остановки сердца
+													span.interesting-slider__date Сегодня 09:43
+										.interesting-slider__slide.swiper-slide
+											a.interesting-slider__block(href="#" style="background-image: url(img/interesting-slide1.jpg);")
+												.interesting-slider__wrap-text
+													h3.interesting-slider__title В краснодарском фитнес-центре врач спас мужчину после остановки сердца
+													span.interesting-slider__date Сегодня 09:43
+										.interesting-slider__slide.swiper-slide
+											a.interesting-slider__block(href="#" style="background-image: url(img/interesting-slide1.jpg);")
+												.interesting-slider__wrap-text
+													h3.interesting-slider__title В краснодарском фитнес-центре врач спас мужчину после остановки сердца
+													span.interesting-slider__date Сегодня 09:43
+									.interesting-slider__arrow.interesting-slider__arrow--prev
+										svg
+											use(xlink:href="img/sprite.svg#arrow")
+									.interesting-slider__arrow.interesting-slider__arrow--next
+										svg
+											use(xlink:href="img/sprite.svg#arrow")
+
+						.container
+							a.link-row-all(href="#")
+								.link-row-all__wrapper
+									span.link-row-all__text Смотреть все
+									svg.link-row-all__arrow
+										use(xlink:href="img/sprite.svg#arrow-long")
+
+					section.show-ba-sect.show-ba-sect--no-offset
+						picture
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 991px)")
+							source(srcset="img/img-ba1-tab.jpg" media="(max-width: 575px)")
+							img(src="img/img-ba1.jpg")
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+
+
+
+
+
+			//- .sidebar-page(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug	
+

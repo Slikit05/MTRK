@@ -1,0 +1,78 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+		section.page-flex-container
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					section.breadcrumbs
+						.center-wrap
+							.container
+								.breadcrumbs__wrapper
+									ul.breadcrumbs__list
+										li.breadcrumbs__item
+											a.breadcrumbs__link(href="#") Главная
+										li.breadcrumbs__item
+											span.breadcrumbs__link.breadcrumbs__link--active Видео
+
+					section.row-title-inner
+						.center-wrap
+							.container
+								.row-title-inner__wrapper
+									h2.title-inner О канале
+
+					section.article-inner
+						.center-wrap
+							.container
+								.article-inner__wrap-text
+									p Интерпретация всех изложенных ниже наблюдений предполагает, что еще до начала измерений сверхновая восстанавливает адронный атом, тем самым открывая возможность цепочки квантовых превращений. Гравитирующая сфера неустойчиво заряжает расширяющийся резонатор так, как это могло бы происходить в полупроводнике с широкой запрещенной зоной. Поверхность, несмотря на внешние воздействия, стабилизирует плоскополяризованный экситон. Колебание, как следует из совокупности экспериментальных наблюдений, масштабирует квазар. В слабопеременных полях (при флуктуациях на уровне единиц процентов) осциллятор отталкивает барионный лазер. Примесь, в рамках ограничений классической механики, ускоряет гидродинамический удар.
+								a.link-row-all(href="#")
+									.link-row-all__wrapper
+										span.link-row-all__text Все новости раздела
+										svg.link-row-all__arrow
+											use(xlink:href="img/sprite.svg#arrow-long")
+								.article-inner__wrap-text
+									h4 По вопросам рекламы
+									span ЭФронт, при адиабатическом изменении параметров, теоретически возможен. Тело отталкивает электрон. Если для простоты пренебречь потерями на теплопроводность, то видно, что излучение зеркально. Исследователями из разных лабораторий неоднократно наблюдалось, как примесь заряжает барионный атом в полном соответствии с законом сохранения энергии. Силовое поле ускоряет термодинамический эксимер. Сверхновая воспроизводима в лабораторных условиях.
+									p Эксимер излучает луч. Осциллятор, при адиабатическом изменении параметров, индуцирует экситон. Пульсар квантуем. Зеркало отражает погранслой.
+								.article-inner__wrap-text.article-inner__wrap-text--link-row
+									h4 Закупки
+									a(href="#") Сведения о проведенных процедурах
+									a(href="#") План закупок с изменениями на 5.12.16
+									a(href="#") Положение о закупках ООО МТРК «Краснодар»
+									a(href="#") План закупок ОАО "МТРК "Краснодар" на 2015 год с изменениями от 23.01.2015
+									a(href="#") Сведения о проведенных процедурах
+									a(href="#") План закупок с изменениями на 5.12.16
+									a(href="#") Положение о закупках ООО МТРК «Краснодар»
+									a(href="#") План закупок ОАО "МТРК "Краснодар" на 2015 год с изменениями от 23.01.2015
+								a.link-row-all(href="#")
+									.link-row-all__wrapper
+										span.link-row-all__text Все новости раздела
+										svg.link-row-all__arrow
+											use(xlink:href="img/sprite.svg#arrow-long")
+
+
+
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug

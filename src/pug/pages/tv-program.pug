@@ -1,0 +1,232 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+		section.page-flex-container
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					section.breadcrumbs
+						.container
+							.breadcrumbs__wrapper
+								ul.breadcrumbs__list
+									li.breadcrumbs__item
+										a.breadcrumbs__link(href="#") Главная
+									li.breadcrumbs__item
+										span.breadcrumbs__link.breadcrumbs__link--active Видео
+
+					section.row-title-inner
+						.container
+							.row-title-inner__wrapper
+								h2.title-inner Телепрограмма
+
+					section.tv-program
+						.container
+							.tv-program__up
+								.tv-program__wrap
+									select.select#today
+										option Сегодня
+										option Сегодня
+										option Сегодня
+								.tv-program__wrap
+									select.select#now
+										option Сейчас
+										option Сейчас
+										option Сейчас
+							.tv-program__middle
+								.tv-program__left
+									.tv-program__block
+										a.news-post-sm.news-post-sm--change(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/sm-img-news.jpg")
+												.news-post-sm__right
+													span.news-post-sm__date Сейчас в эфире 06:30
+													.news-post-sm__play-wrap
+														.news-post-sm__wrap-svg
+															svg
+																use(xlink:href="img/sprite.svg#play")
+														h5.news-post-sm__title Лучшее в Краснодаре
+													span.news-post-sm__age 12+
+										a.news-post-sm.news-post-sm--change(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/sm-img-news.jpg")
+												.news-post-sm__right
+													span.news-post-sm__date Затем 05:15
+													.news-post-sm__play-wrap
+														
+														h5.news-post-sm__title Лучшее в Краснодаре
+													span.news-post-sm__age 12+
+										a.news-post-sm.news-post-sm--change(href="#")
+											.news-post-sm__up
+												img.news-post-sm__img(src="img/sm-img-news.jpg")
+												.news-post-sm__right
+													span.news-post-sm__date Потом 05:20
+													.news-post-sm__play-wrap
+														
+														h5.news-post-sm__title Лучшее в Краснодаре
+													span.news-post-sm__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+								.tv-program__center
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+								.tv-program__right
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+									.tv-program__row
+										span.tv-program__time 05:45
+										span.tv-program__name Действующие лица
+										span.tv-program__age 12+
+										
+
+
+
+
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug

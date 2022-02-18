@@ -1,0 +1,43 @@
+.page-flex-container {
+  display: flex;
+  min-height: calc(100vh - 209px);
+  position: relative;
+  z-index: 20;
+  max-height: 100%;
+  justify-content: center;
+}
+
+.sidebar-page {
+  flex-grow: 1;
+  // max-width: 200px;
+  margin: 265px 0 0;
+  max-height: 100%;
+  background-size: cover;
+  background-position: top;
+  position: sticky;
+  max-height: 100vh;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+
+  &--no-offset {
+    margin-top: 0;
+  } 
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &--inner {
+    margin: 0;
+  }
+}
+
+.content-page {
+  max-width: 1520px;
+  background-color: #fff;
+  width: 100%;
+  flex-shrink: inherit;
+}

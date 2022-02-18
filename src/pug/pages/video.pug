@@ -1,0 +1,362 @@
+doctype html
+html(lang="ru-Ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title МТРК
+
+		include includes/link.pug
+
+	body
+		section.page-flex-container
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+			.content-page
+				include includes/mobile-menu.pug
+				header
+					include includes/header.pug
+
+				main
+					section.breadcrumbs
+						.container
+							.breadcrumbs__wrapper
+								ul.breadcrumbs__list
+									li.breadcrumbs__item
+										a.breadcrumbs__link(href="#") Главная
+									li.breadcrumbs__item
+										span.breadcrumbs__link.breadcrumbs__link--active Видео
+
+					section.row-title-inner
+						.container
+							.row-title-inner__wrapper
+								h2.title-inner Видео
+								.date-field
+									.date-field__wrap
+										input.date-field__field#dateSelect(placeholder="Видео за период")
+										.date-field__wrap-arrow
+											img.date-field__arrow(src="img/arrow-down.svg")
+									.date-field__drop-down
+										.date-field__calendar(id="datepicker2")
+
+					section.tabs-row
+						.container
+							.tabs-row__nav
+								span.tabs-row__tab.tabs-row__tab--active(rel="tabs1") Новости
+								span.tabs-row__tab(rel="tabs2") Все проекты
+
+						.tabs-row__content.tabs-row__content--active(id="tabs1")
+							section.hash-slider
+								.container
+									.hash-slider__container.swiper-container
+										.hash-slider__wrapper.swiper-wrapper
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link.hash-slider__link--active(href="#") #Все
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+
+						.tabs-row__content(id="tabs2")
+							section.hash-slider
+								.container
+									.hash-slider__container.swiper-container
+										.hash-slider__wrapper.swiper-wrapper
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link.hash-slider__link--active(href="#") #Все11
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга22
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга33
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга44
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга55
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+											.hash-slider__slide.swiper-slide
+												.hash-slider__wrapper
+													a.hash-slider__link(href="#") #Краснодар столица юга
+
+
+					section.grid-inner
+						.container
+							.grid-inner__wrapper
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										.news-post-big__row                      
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.play-block__text.play-block__text--green.play-block__text--yellow-line Краснодар сегодня
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text.play-block__text--white.play-block__text--gray-yellow-line Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text.play-block__text--black.play-block__text--red-line Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text.play-block__text--broun Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										.news-post-big__row                      
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.play-block__text Краснодар сегодня
+
+								a.news-post-big(href="#")
+									img.news-post-big__img(src="img/news-post-big1.jpg")
+									.news-post-big__wrap-text
+										span.news-post-big__date Сегодня 05:42
+										h3.news-post-big__title План выполнен: в Краснодаре обновили около<br> 65 км дорог
+										.news-post-big__row                      
+											.play-block
+												span.play-block__time 05:54
+												.play-block__play
+													svg
+														use(xlink:href="img/sprite.svg#play")
+												span.play-block__text Краснодар сегодня
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.news-post-md(href="#")
+									.news-post-md__wrap-img
+										img.news-post-md__img(src="img/news-post-md1.jpg")
+										.play-block
+											span.play-block__time 05:54
+											.play-block__play
+												svg
+													use(xlink:href="img/sprite.svg#play")
+											span.play-block__text Краснодар сегодня
+									.news-post-md__wrap-text
+										h4.news-post-md__title Ко Дню города в Краснодаре проведут масштабный субботник
+										span.news-post-md__date Сегодня 09:43
+
+								a.link-row-all(href="#")
+									.container
+										.link-row-all__wrapper
+											span.link-row-all__text Смотреть все новости
+											svg.link-row-all__arrow
+												use(xlink:href="img/sprite.svg#arrow-long")
+
+
+				footer
+					include includes/footer.pug
+				include includes/nav-fixed.pug
+
+			.sidebar-page.sidebar-page--inner(style="background-image: url(img/sider-bar.jpg)")
+				//- img(src="img/sider-bar.jpg")
+
+		include includes/script.pug	
+
